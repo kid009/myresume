@@ -10,6 +10,15 @@
 
   @include('layouts.partials.css')
 
+  <style>
+    :root {
+      --default-font: "Prompt", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+    body {
+      font-family: var(--default-font);
+    }
+  </style>
+
 </head>
 
 <body class="index-page">
@@ -25,7 +34,7 @@
       <a href="{{url('/')}}" class="logo d-flex align-items-center justify-content-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Mark Andersen</h1>
+        <p class="sitename">Pongpoom Kaewsungnern</p>
       </a>
 
     </div>
