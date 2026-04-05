@@ -3,8 +3,8 @@
         <div class="row justify-content-center">
             <div class="col-lg-10">
                 <div class="intro-header text-center" data-aos="fade-up" data-aos-delay="150">
-                    <h1>Hi, I'm Pongpoom Kaewsungnern</h1>
-                    <p class="subtitle">Backend Developer &amp; Software Quality Advocate</p>
+                    <h1>{{__("Hi, I'm Pongpoom Kaewsungnern")}}</h1>
+                    <p class="subtitle">{{ __('Backend Developer & Software Quality Advocate') }}</p>
                 </div>
                 <div class="main-content-wrapper">
                     <div class="row align-items-start">
