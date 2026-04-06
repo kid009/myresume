@@ -1,40 +1,26 @@
 @extends('layouts.app')
 
-@section('title', 'Mark Andersen - Creative Designer Portfolio')
-
 @section('content')
 <!-- Hero Section -->
 @include('portfolio.partials.hero_section')
 <!-- /Hero Section -->
-
+<hr>
 <!-- About Section -->
 @include('portfolio.partials.about_section')
 <!-- /About Section -->
-
-<!-- Stats Section -->
-@include('portfolio.partials.stats_section')
-<!-- /Stats Section -->
-
-<!-- Skills Section -->
-@include('portfolio.partials.skills_section')
-<!-- /Skills Section -->
-
+<hr>
 <!-- Resume Section -->
 @include('portfolio.partials.resume_section')
 <!-- /Resume Section -->
-
+<hr>
 <!-- Portfolio Section -->
 @include('portfolio.partials.portfolio_section')
 <!-- /Portfolio Section -->
-
+<hr>
 <!-- Services Section -->
 @include('portfolio.partials.services_section')
 <!-- /Services Section -->
-
-<!-- Testimonials Section -->
-@include('portfolio.partials.testimonials_section')
-<!-- /Testimonials Section -->
-
+<hr>
 <!-- Contact Section -->
 @include('portfolio.partials.contact_section')
 <!-- /Contact Section -->

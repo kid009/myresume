@@ -3,8 +3,8 @@
         <div class="row justify-content-center">
             <div class="col-lg-10">
                 <div class="intro-header text-center" data-aos="fade-up" data-aos-delay="150">
-                    <h1>{{__("Hi, I'm Pongpoom Kaewsungnern")}}</h1>
-                    <p class="subtitle">{{ __('Backend Developer & Software Quality Advocate') }}</p>
+                    <h1>{{__("home.title")}}</h1>
+                    <p class="subtitle">{{__("home.sub_title")}}</p>
                 </div>
                 <div class="main-content-wrapper">
                     <div class="row align-items-start">
@@ -17,11 +17,11 @@
                                 <div class="profile-meta">
                                     <div class="location">
                                         <i class="bi bi-geo-alt"></i>
-                                        <span>Thailand (Remote 100%)</span>
+                                        <span>{{__('home.about_localtion')}}</span>
                                     </div>
                                     <div class="status">
                                         <div class="status-indicator"></div>
-                                        <span>Available for freelance projects</span>
+                                        <span>{{__('home.about_status')}}</span>
                                     </div>
                                 </div>
                             </div>
@@ -29,8 +29,8 @@
                         <div class="col-lg-8" data-aos="fade-left" data-aos-delay="250">
                             <div class="content-area">
                                 <div class="story-block">
-                                    <p class="lead-text">I build robust backend systems and RESTful APIs that power modern web applications. With a strong foundation in Laravel and PHP, I focus on delivering scalable and secure solutions tailored to business needs.</p>
-                                    <p>My development philosophy goes beyond just writing code that works. I believe true professionalism lies in reliability. That's why I integrate comprehensive Unit and Feature testing (using PHPUnit/Pest) into my workflow to ensure every system I build is stable, maintainable, and bug-free.</p>
+                                    <p class="lead-text">{{__("home.paragraph_1")}}</p>
+                                    <p>{{__("home.paragraph_2")}}</p>
                                 </div>
                                 <div class="expertise-grid">
                                     <div class="expertise-item" data-aos="zoom-in" data-aos-delay="300">
@@ -38,8 +38,7 @@
                                             <i class="bi bi-code-slash"></i>
                                         </div>
                                         <div class="expertise-content">
-                                            <h4>Backend Development</h4>
-                                            <p>Building secure APIs and robust server-side logic using Laravel</p>
+                                            <h4>{{__("home.skill_box_1")}}</h4>
                                         </div>
                                     </div>
                                     <div class="expertise-item" data-aos="zoom-in" data-aos-delay="350">
@@ -47,8 +46,7 @@
                                             <i class="bi bi-shield-check"></i>
                                         </div>
                                         <div class="expertise-content">
-                                            <h4>Automated Testing</h4>
-                                            <p>Writing PHPUnit/Pest tests to ensure 100% system reliability</p>
+                                            <h4>{{__("home.skill_box_2")}}</h4>
                                         </div>
                                     </div>
                                     <div class="expertise-item" data-aos="zoom-in" data-aos-delay="400">
@@ -56,14 +54,9 @@
                                             <i class="bi bi-database"></i>
                                         </div>
                                         <div class="expertise-content">
-                                            <h4>Database Design</h4>
-                                            <p>Architecting efficient and optimized MySQL databases</p>
+                                            <h4>{{__("home.skill_box_3")}}</h4>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="philosophy-quote" data-aos="fade-up" data-aos-delay="450">
-                                    <div class="quote-mark">"</div>
-                                    <p>Writing tests isn't just about finding bugs; it's about documenting behavior, ensuring peace of mind, and delivering software that clients can truly rely on.</p>
                                 </div>
                             </div>
                         </div>

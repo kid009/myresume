@@ -2,12 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\DTOs\HomeDto;
+use Illuminate\Support\Facades\App;
 
 class PortfolioController extends Controller
 {
     public function index()
     {
-        return view('portfolio.index');
+        App::setlocale('th');
+
+        $homeData = HomeDto::make();
+
+        return view('portfolio.index', [
+            'homeData' => $homeData,
+        ]);
     }
 }

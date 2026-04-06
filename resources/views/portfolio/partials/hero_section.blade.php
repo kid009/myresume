@@ -3,33 +3,16 @@
         <div class="row align-items-center">
             <div class="col-lg-6 order-2 order-lg-1">
                 <div class="hero-content">
-                    <h1 data-aos="fade-up" data-aos-delay="200">
-                        Laravel Developer &amp;
-                        <span class="accent-text">Quality Advocate</span>
-                    </h1>
+                    <h3 data-aos="fade-up" data-aos-delay="200">
+                        Modern Web Developer (Laravel Stack)
+                        {{-- <span class="accent-text">Quality Advocate</span> --}}
+                    </h3>
                     <p class="hero-description" data-aos="fade-up" data-aos-delay="300">
-                        I build robust, scalable web applications and RESTful APIs using Laravel.
-                        By integrating comprehensive Unit and Feature testing into my workflow,
-                        I ensure high-quality, bug-free software that businesses can rely on.
-                        (พัฒนาระบบหลังบ้านและ API ที่แข็งแกร่ง พร้อมทดสอบโค้ดอย่างเป็นระบบเพื่อส่งมอบงานที่ไร้ข้อผิดพลาด)
+                        {{ __('home.bio') }}
                     </p>
                     <div class="hero-actions" data-aos="fade-up" data-aos-delay="400">
-                        <a href="#portfolio" class="btn-primary">View My Work</a>
-                        <a href="#contact" class="btn-secondary">Hire Me</a>
-                    </div>
-                    <div class="hero-stats" data-aos="fade-up" data-aos-delay="500">
-                        <div class="stat-item">
-                            <span class="stat-number">3+</span>
-                            <span class="stat-label">Years Experience</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">90%+</span>
-                            <span class="stat-label">Test Coverage</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">100%</span>
-                            <span class="stat-label">Remote Ready</span>
-                        </div>
+                        <a href="#portfolio" class="btn-primary">{{__('home.btn_portfolio')}}</a>
+                        <a href="#contact" class="btn-secondary">{{__('home.btn_contact')}}</a>
                     </div>
                 </div>
             </div>
@@ -41,15 +24,19 @@
 
                         <div class="floating-card card-1" data-aos="fade-up" data-aos-delay="600">
                             <i class="bi bi-server"></i>
-                            <span>Backend System</span>
+                            <span>Laravel</span>
                         </div>
                         <div class="floating-card card-2" data-aos="fade-up" data-aos-delay="700">
                             <i class="bi bi-braces"></i>
-                            <span>RESTful APIs</span>
+                            <span>Action-DTO-Query</span>
                         </div>
                         <div class="floating-card card-3" data-aos="fade-up" data-aos-delay="800">
                             <i class="bi bi-shield-check"></i>
-                            <span>PHPUnit Testing</span>
+                            <span>Vue</span>
+                        </div>
+                        <div class="floating-card card-3" data-aos="fade-up" data-aos-delay="800">
+                            <i class="bi bi-shield-check"></i>
+                            <span>POS System Development</span>
                         </div>
                     </div>
                 </div>
