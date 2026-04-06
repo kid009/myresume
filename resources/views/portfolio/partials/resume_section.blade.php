@@ -1,142 +1,86 @@
 <section id="resume" class="resume section">
-    <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-            in iste officiis commodi quidem hic quas.</p>
+    <div class="container section-title text-center" data-aos="fade-up">
+        <h2>{{ __('resume.page_title') }}</h2>
+        <p class="mb-4 text-white">{{ __('resume.summary_desc') }}</p>
+        
+        <a href="{{ asset('assets/docs/resume_laravel.pdf') }}" target="_blank" class="btn btn-primary btn-lg rounded-pill px-4 py-2 mt-3 shadow-sm">
+            <i class="bi bi-file-earmark-pdf-fill me-2"></i> {{ __('resume.btn_download') }}
+        </a>
     </div>
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="container mt-5" data-aos="fade-up" data-aos-delay="100">
         <div class="row align-items-start">
-            <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+            
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
                 <div class="professional-journey">
-                    <div class="section-intro">
+                    <div class="section-intro mb-4">
                         <div class="icon-wrapper">
                             <i class="bi bi-briefcase-fill"></i>
                         </div>
-                        <h2>Professional Experience</h2>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium totam rem aperiam.</p>
+                        <h3 class="fw-bold">{{ __('resume.experience_title') }}</h3>
                     </div>
+                    
                     <div class="experience-timeline">
-                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <div class="position-meta">
-                                    <span class="timeline-year">2023 - Present</span>
-                                </div>
-                                <h3>Creative Director</h3>
-                                <h4>Innovation Studios Ltd</h4>
-                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia
-                                    consequuntur magni dolores eos qui ratione.</p>
-                                <div class="key-achievements">
-                                    <span class="achievement-tag">Team Leadership</span>
-                                    <span class="achievement-tag">Strategic Planning</span>
-                                    <span class="achievement-tag">Creative Vision</span>
-                                </div>
-                            </div>
+                        <div class="timeline-item pb-4 border-start border-primary border-2 ps-4 position-relative">
+                            <div class="position-absolute top-0 start-0 translate-middle bg-primary rounded-circle" style="width: 15px; height: 15px;"></div>
+                            <span class="text-primary fw-bold">{{ __('resume.exp_freelance_year') }}</span>
+                            <h4 class="mt-2 mb-1 fw-bold">{{ __('resume.exp_freelance_title') }}</h4>
+                            <p class="text-white small">Full-Stack Development (Laravel & Livewire), POS Systems & Web Applications.</p>
                         </div>
-                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="350">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <div class="position-meta">
-                                    <span class="timeline-year">2020 - 2023</span>
-                                </div>
-                                <h3>Senior Product Designer</h3>
-                                <h4>Digital Innovations Corp</h4>
-                                <p>Ut enim ad minima veniam quis nostrum exercitationem ullam corporis suscipit
-                                    laboriosam nisi ut aliquid ex ea commodi.</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <div class="position-meta">
-                                    <span class="timeline-year">2017 - 2020</span>
-                                </div>
-                                <h3>UX/UI Designer</h3>
-                                <h4>Creative Solutions Agency</h4>
-                                <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
-                                    molestiae consequatur vel illum.</p>
-                            </div>
+
+                        <div class="timeline-item pb-4 border-start border-primary border-2 ps-4 position-relative">
+                            <div class="position-absolute top-0 start-0 translate-middle bg-secondary rounded-circle" style="width: 15px; height: 15px;"></div>
+                            <span class="text-primary fw-bold" >{{ __('resume.exp_bluebox_year') }}</span>
+                            <h4 class="mt-2 mb-1 fw-bold">{{ __('resume.exp_bluebox_title') }}</h4>
+                            <h6 class="text-white">{{ __('resume.exp_bluebox_company') }}</h6>
+                            <p class="text-white small">ASP.NET, C#, MSSQL for Regulatory Data Management.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
+
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
                 <div class="education-skills">
-                    <div class="section-intro">
+                    <div class="section-intro mb-4">
                         <div class="icon-wrapper">
-                            <i class="bi bi-mortarboard-fill"></i>
+                            <i class="bi bi-lightning-charge-fill"></i>
                         </div>
-                        <h2>Education &amp; Qualifications</h2>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-                            voluptatum deleniti atque corrupti.</p>
+                        <h3 class="fw-bold">{{ __('resume.skills_title') }}</h3>
                     </div>
-                    <div class="education-grid">
-                        <div class="education-card primary" data-aos="zoom-in" data-aos-delay="300">
-                            <div class="education-header">
-                                <div class="degree-icon">
-                                    <i class="bi bi-award"></i>
-                                </div>
-                                <div class="degree-info">
-                                    <h3>Master of Design</h3>
-                                    <p class="institution">Tempus Design Institute</p>
-                                    <span class="graduation-year">2015 - 2017</span>
-                                </div>
-                            </div>
-                            <div class="education-details">
-                                <p>Magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi
-                                    ut aliquip ex ea commodo consequat.</p>
-                                <div class="honors">
-                                    <span class="honor-badge">Magna Cum Laude</span>
-                                </div>
+                    
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="p-3 border rounded shadow-sm bg-dark text-white">
+                                <i class="bi bi-braces fs-4 text-primary mb-2 d-block"></i>
+                                <h6 class="fw-bold">Backend & Database</h6>
+                                <p class="small text-white mb-0">Laravel, Oracle DB, MySQL, RESTful API</p>
                             </div>
                         </div>
-                        <div class="education-card" data-aos="zoom-in" data-aos-delay="350">
-                            <div class="education-header">
-                                <div class="degree-icon">
-                                    <i class="bi bi-laptop"></i>
-                                </div>
-                                <div class="degree-info">
-                                    <h3>Bachelor of Arts</h3>
-                                    <p class="institution">Creative Arts University</p>
-                                    <span class="graduation-year">2011 - 2015</span>
-                                </div>
-                            </div>
-                            <div class="education-details">
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                    fugiat nulla pariatur excepteur sint.</p>
+                        <div class="col-md-6">
+                            <div class="p-3 border rounded shadow-sm bg-dark text-white">
+                                <i class="bi bi-window-sidebar fs-4 text-primary mb-2 d-block"></i>
+                                <h6 class="fw-bold">Frontend</h6>
+                                <p class="small text-white mb-0">Livewire, JavaScript, Bootstrap, HTML/CSS</p>
                             </div>
                         </div>
-                        <div class="certification-section" data-aos="fade-up" data-aos-delay="400">
-                            <h4>Professional Certifications</h4>
-                            <div class="certifications">
-                                <div class="cert-item">
-                                    <i class="bi bi-patch-check"></i>
-                                    <div class="cert-details">
-                                        <span class="cert-name">Advanced UX Design</span>
-                                        <span class="cert-provider">Design Academy • 2022</span>
-                                    </div>
-                                </div>
-                                <div class="cert-item">
-                                    <i class="bi bi-patch-check"></i>
-                                    <div class="cert-details">
-                                        <span class="cert-name">Digital Innovation Strategy</span>
-                                        <span class="cert-provider">Innovation Institute • 2021</span>
-                                    </div>
-                                </div>
-                                <div class="cert-item">
-                                    <i class="bi bi-patch-check"></i>
-                                    <div class="cert-details">
-                                        <span class="cert-name">Leadership in Design</span>
-                                        <span class="cert-provider">Leadership Academy • 2020</span>
-                                    </div>
-                                </div>
+                        <div class="col-md-6">
+                            <div class="p-3 border rounded shadow-sm bg-dark text-white">
+                                <i class="bi bi-tools fs-4 text-primary mb-2 d-block"></i>
+                                <h6 class="fw-bold">Tools & DevOps</h6>
+                                <p class="small text-white mb-0">Docker, Git, Postman</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 border rounded shadow-sm bg-dark text-white">
+                                <i class="bi bi-briefcase fs-4 text-primary mb-2 d-block"></i>
+                                <h6 class="fw-bold">Business Logic</h6>
+                                <p class="small text-white mb-0">ERP Systems, POS, Inventory Management</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
 </section>

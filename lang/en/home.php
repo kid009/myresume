@@ -1,11 +1,13 @@
 <?php
 
 return [
+
     //home
     'name' => 'Pongpoom Kaewsungnern',
     'bio' => "A Full-Stack Developer specializing in the Laravel ecosystem, crafting dynamic web applications with Laravel and Livewire. I focus on clean code architecture like Action-DTO-Query to deliver scalable and maintainable solutions. Experienced in building complex business tools and custom POS systems from the database layer up to responsive user interfaces.",
     'btn_portfolio' => 'View Portfolio',
     'btn_contact' => 'Contact Me',
+
     //about
     'title' => "Hi, I'm Pongpoom Kaewsungnern",
     'sub_title' => "Full-Stack Laravel Developer",
@@ -16,4 +18,7 @@ return [
     'skill_box_3' => "Designing efficient database schemas to handle complex systems like POS.",
     'about_localtion' => "Location: Nakhon Ratchasima, Thailand (Remote 100%)",
     'about_status' => "Status: Available for freelance projects",
+
+
+
 ];
