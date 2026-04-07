@@ -1,78 +1,38 @@
 <section id="contact" class="contact section">
-    <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-            in iste officiis commodi quidem hic quas.</p>
+    
+    <div class="container section-title text-center" data-aos="fade-up">
+        <h2>{{ __('contact.lets_connect') }}</h2>
+        <p class="text-white-50" style="margin: 0 auto;">
+            {{ __('contact.connect_desc') }}
+        </p>
     </div>
-    <div class="container">
-        <div class="row gy-4">
-            <div class="col-lg-5">
-                <div class="info-item">
-                    <div class="info-icon">
-                        <i class="bi bi-chat-dots"></i>
-                    </div>
-                    <div class="info-content">
-                        <h4>Let's Connect</h4>
-                        <p>We're here to discuss your vision and explore how we can bring it to life together.</p>
-                    </div>
-                </div>
-                <div class="contact-details">
-                    <div class="detail-item">
-                        <div class="detail-icon">
-                            <i class="bi bi-envelope-open"></i>
-                        </div>
-                        <div class="detail-content">
-                            <span class="detail-label">Email us</span>
-                            <span class="detail-value">contact@example.com</span>
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-5 gx-lg-5">
+
+            <div class="col-lg-4"></div>
+            
+            <div class="col-lg-4">
+                <div class="info-wrap">               
+                    <div class="info-item d-flex align-items-center mb-4">
+                        <i class="bi bi-envelope text-success fs-4 me-3"></i>
+                        <div>
+                            <p class="text-uppercase text-white-50 small mb-0">{{ __('contact.email_label') }}</p>
+                            <h6 class="mb-0">pongpoom1985@gmail.com</h6>
                         </div>
                     </div>
-                    <div class="detail-item">
-                        <div class="detail-icon">
-                            <i class="bi bi-telephone-outbound"></i>
-                        </div>
-                        <div class="detail-content">
-                            <span class="detail-label">Call us</span>
-                            <span class="detail-value">+1 (555) 432-8976</span>
+
+                    <div class="info-item d-flex align-items-center">
+                        <i class="bi bi-telephone text-success fs-4 me-3"></i>
+                        <div>
+                            <p class="text-uppercase text-white-50 small mb-0">{{ __('contact.phone_label') }}</p>
+                            <h6 class="mb-0">082-5889826</h6>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-7">
-                <div class="form-wrapper">
-                    <div class="form-header">
-                        <h3>Send us a message</h3>
-                    </div>
-                    <form action="#" method="post" class="php-email-form">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Full Name</label>
-                                    <input type="text" name="name" required="">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Email Address</label>
-                                    <input type="email" name="email" required="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label>Subject</label>
-                            <input type="text" name="subject" required="">
-                        </div>
-                        <div class="form-group">
-                            <label for="projectMessage">Message</label>
-                            <textarea name="message" id="projectMessage" rows="5" required=""></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">
-                            <span>Send Message</span>
-                            <i class="bi bi-arrow-right"></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
+
+            <div class="col-lg-4"></div>
         </div>
     </div>
 </section>

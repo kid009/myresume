@@ -13,42 +13,58 @@ A professional, responsive personal portfolio and resume website built with Lara
 ## 🛠️ Tech Stack
 
 - **Backend:** Laravel 12.x (PHP 8.2+)
-- **Frontend:** 
-  - Bootstrap 5 (UI Framework)
-  - Tailwind CSS 4.0 (Modern styling)
-  - Vite (Asset Bundling)
+- **Frontend:**
+    - Bootstrap 5 (UI Framework)
 - **Typography:** Google Fonts (Prompt, Roboto, Raleway)
 - **Icons:** Bootstrap Icons
+
+## 📁 Project Structure
+
+- `app/Http/Controllers/`: Handles main page logic and localization.
+- `app/DTOs/`: Data Transfer Objects for clean view data management.
+- `lang/`: Contains PHP translation files (`en/`, `th/`).
+- `resources/views/portfolio/`: Modular Blade sections (Hero, About, Resume, etc.).
+- `resources/views/layouts/`: Base layout and asset partials.
+- `public/assets/`: Pre-built template assets (CSS, JS, Vendor, Images).
 
 ## 📦 Installation
 
 To get started with this project locally:
 
 1. **Clone the repository:**
-   ```bash
-   git clone <repository-url>
-   cd myresume
-   ```
+
+    ```bash
+    git clone <repository-url>
+    cd myresume
+    ```
 
 2. **Run the setup script:**
    This project includes a convenient setup command that handles dependencies, environment configuration, and asset building:
-   ```bash
-   composer setup
-   ```
-   *Alternatively, you can run the steps manually: `composer install`, `cp .env.example .env`, `php artisan key:generate`, `npm install`, and `npm run build`.*
 
-3. **Start the development server:**
-   ```bash
-   npm run dev
-   ```
+    ```bash
+    composer setup
+    ```
+
+    _Alternatively, you can run the steps manually: `composer install`, `cp .env.example .env`, `php artisan key:generate`, `npm install`, and `npm run build`._
+
+3. **Start the development servers:**
+   In two separate terminals, run:
+    ```bash
+    php artisan serve
+    ```
+    and
+    ```bash
+    npm run dev
+    ```
 
 ## 🌍 Localization
 
-The project uses JSON-based translation files located in the `lang/` directory:
-- `lang/en.json` - English translations
-- `lang/th.json` - Thai translations
+The project uses PHP-based translation files located in the `lang/` directory:
 
-To add new content, simply add the key-value pairs to both files and use the `__('Key')` helper in your Blade templates.
+- `lang/en/home.php`, `lang/en/resume.php` - English translations
+- `lang/th/home.php`, `lang/th/resume.php` - Thai translations
+
+To add new content, add keys to the relevant PHP files and use the `__('filename.key')` helper in your Blade templates (e.g., `__('resume.page_title')`).
 
 ## 📜 Credits
 

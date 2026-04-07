@@ -1,0 +1,10 @@
+<?php
+
+return [
+    'home' => 'Home',
+    'about' => 'About',
+    'resume' => 'Resume',
+    'portfolio' => 'Portfolio',
+    'services' => 'Services',
+    'contact' => 'Contact',
+];

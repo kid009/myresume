@@ -8,16 +8,6 @@
 
     @include('layouts.partials.css')
 
-    <style>
-        :root {
-            --default-font: "Prompt", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-        }
-
-        body {
-            font-family: var(--default-font);
-        }
-    </style>
-
 </head>
 
 <body class="index-page">
@@ -39,7 +29,7 @@
 
         <div class="header-top">
             <div class="profile-img">
-                <img src="{{ asset('assets/img/profile/profile-square-14.webp') }}" alt="" class="img-fluid">
+                <img src="{{ asset('assets/img/profile/profile.png') }}" alt="" class="img-fluid">
             </div>
 
             <a href="{{ url('/') }}" class="logo d-flex align-items-center justify-content-center">
@@ -64,13 +54,6 @@
 
     <footer id="footer" class="footer light-background">
         <div class="container">
-            <h3 class="sitename">Pongpoom Kaewsungnern</h3>
-            <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi
-                placeat.</p>
-            <div class="social-links d-flex justify-content-center">
-                <a href="https://github.com/kid009"><i class="bi bi-github"></i></a>
-                <a href="https://www.linkedin.com/in/pongpoom-keawsungnern-817250120"><i class="bi bi-linkedin"></i></a>
-            </div>
             <div class="container">
                 <div class="copyright">
                     <span>Copyright</span> 

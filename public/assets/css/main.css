@@ -12,9 +12,9 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Ubuntu",  sans-serif;
-  --nav-font: "Raleway",  sans-serif;
+  --default-font: "Prompt",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Prompt",  sans-serif;
+  --nav-font: "Prompt",  sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -604,7 +604,7 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  padding: 0px 0;
+  padding: 120px 0;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -864,8 +864,8 @@ section,
 # About Section
 --------------------------------------------------------------*/
 .about {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .about .intro-header {
@@ -2238,7 +2238,7 @@ section,
 # Services Section
 --------------------------------------------------------------*/
 .services {
-  padding: 40px 0;
+  padding: 120px 0;
 }
 
 .services .service-item {
@@ -2649,7 +2649,7 @@ section,
 # Contact Section
 --------------------------------------------------------------*/
 .contact {
-  padding: 40px 0 20px;
+  padding: 120px 0 100px;
 }
 
 .contact .info-item {
