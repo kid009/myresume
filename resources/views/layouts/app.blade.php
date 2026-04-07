@@ -52,16 +52,7 @@
         @yield('content')
     </main>
 
-    <footer id="footer" class="footer light-background">
-        <div class="container">
-            <div class="container">
-                <div class="copyright">
-                    <span>Copyright</span> 
-                    <a href="https://pongpoom-dev.com/"><strong class="px-1 sitename">Pongpoom Kaewsungnern</strong></a> <span>All Rights Reserved</span>
-                </div>
-            </div>
-        </div>
-    </footer>
+    @include('layouts.partials.footer')
 
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">

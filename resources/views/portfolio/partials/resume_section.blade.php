@@ -14,9 +14,6 @@
             <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
                 <div class="professional-journey">
                     <div class="section-intro mb-4">
-                        <div class="icon-wrapper">
-                            <i class="bi bi-briefcase-fill"></i>
-                        </div>
                         <h3 class="fw-bold">{{ __('resume.experience_title') }}</h3>
                     </div>
                     
@@ -42,38 +39,35 @@
             <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
                 <div class="education-skills">
                     <div class="section-intro mb-4">
-                        <div class="icon-wrapper">
-                            <i class="bi bi-lightning-charge-fill"></i>
-                        </div>
                         <h3 class="fw-bold">{{ __('resume.skills_title') }}</h3>
                     </div>
                     
                     <div class="row g-3">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <div class="p-3 border rounded shadow-sm bg-dark text-white">
-                                <i class="bi bi-braces fs-4 text-primary mb-2 d-block"></i>
-                                <h6 class="fw-bold">Backend & Database</h6>
+                                
+                                <h6 class="fw-bold"><i class="bi bi-braces fs-4 text-primary "></i> Backend & Database</h6>
                                 <p class="small text-white mb-0">Laravel, Oracle DB, MySQL, RESTful API</p>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <div class="p-3 border rounded shadow-sm bg-dark text-white">
-                                <i class="bi bi-window-sidebar fs-4 text-primary mb-2 d-block"></i>
-                                <h6 class="fw-bold">Frontend</h6>
+                                
+                                <h6 class="fw-bold"><i class="bi bi-window-sidebar fs-4 text-primary "></i> Frontend</h6>
                                 <p class="small text-white mb-0">Livewire, JavaScript, Bootstrap, HTML/CSS</p>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <div class="p-3 border rounded shadow-sm bg-dark text-white">
-                                <i class="bi bi-tools fs-4 text-primary mb-2 d-block"></i>
-                                <h6 class="fw-bold">Tools & DevOps</h6>
+                                
+                                <h6 class="fw-bold"><i class="bi bi-tools fs-4 text-primary "></i> Tools & DevOps</h6>
                                 <p class="small text-white mb-0">Docker, Git, Postman</p>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <div class="p-3 border rounded shadow-sm bg-dark text-white">
-                                <i class="bi bi-briefcase fs-4 text-primary mb-2 d-block"></i>
-                                <h6 class="fw-bold">Business Logic</h6>
+                                
+                                <h6 class="fw-bold"><i class="bi bi-briefcase fs-4 text-primary "></i> Business Logic</h6>
                                 <p class="small text-white mb-0">ERP Systems, POS, Inventory Management</p>
                             </div>
                         </div>
