@@ -12,10 +12,12 @@ A **single-page personal portfolio/resume website** (Laravel 12) with bilingual 
 - **Localization**: Session-based via `SetLocale` middleware. Only `en` and `th` are valid locales. Translation files are in `lang/{en,th}/` keyed by section (`home.php`, `menu.php`, `about.php`, `resume.php`, `portfolio.php`, `services.php`, `contact.php`). Use `__('file.key')` in Blade.
 - **Language switch route**: `GET lang/{locale}` redirects back after setting session.
 
-## Frontend Stack (Dual-Build Quirk)
+## Frontend Stack
 
-- **Vite-managed**: `resources/css/app.css` (Tailwind 4) and `resources/js/app.js` — the only Vite entry points.
-- **Pre-built template assets**: Bootstrap 5, AOS, GLightbox, Swiper, Typed.js, Isotope, etc. are loaded directly from `public/assets/` via `<link>`/`<script>` tags in partials (`layouts/partials/css.blade.php`, `layouts/partials/js.blade.php`). **Do not npm-install these vendors** — they are pre-built template files.
+- **CSS framework**: Bootstrap 5 (loaded from `public/assets/vendor/bootstrap/` via `<link>` in `layouts/partials/css.blade.php`). **Do not npm-install Bootstrap** — it is a pre-built template asset.
+- **Custom styles**: `public/assets/css/main.css` (template-specific styles). `resources/css/app.css` is a Vite entry point for any future custom CSS.
+- **JS**: `public/assets/js/main.js` (template logic) + vendor scripts loaded from `public/assets/vendor/` via `<script>` tags in `layouts/partials/js.blade.php`. **Do not npm-install these vendors** — they are pre-built template files.
+- **Vite entry points**: `resources/css/app.css` and `resources/js/app.js` are registered but currently unused in templates (no `@vite` directive). Available for future custom assets.
 - **Views**: `layouts.app` is the base layout. `portfolio/index.blade.php` includes section partials from `portfolio/partials/`.
 
 ## Dev Commands
