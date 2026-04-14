@@ -14,4 +14,8 @@ return [
     'pos-gas-shop_title' => 'P-Gas POS System',
     'pos-gas-shop_desc' => 'A sales and inventory management system for LPG retail, handling complex business logic and large datasets with Oracle DB.',
     'view_project' => 'View Details',
+
+    // My Resume Project
+    'myresume_title' => 'Personal Bilingual Portfolio',
+    'myresume_desc' => 'A bilingual personal resume and portfolio website. Designed with a minimalist approach and optimized for speed by utilizing DTOs (Data Transfer Objects) instead of a traditional database, featuring a seamless language-switching system.',
 ];

@@ -29,7 +29,12 @@ class PortfolioDto
                 github_url: 'https://github.com/kid009/pos-system',
                 tags: ['Laravel', 'MySQL', 'AlpineJs', 'Bootstrap']
             ),
-            // เพิ่มโปรเจคอื่นๆ ได้ที่นี่
+            new ProjectDto(
+                id: 'myresume',
+                category: 'web',
+                github_url: 'https://github.com/kid009/myresume',
+                tags: ['Laravel', 'MySQL', 'AlpineJs', 'Bootstrap']
+            ),
         ];
     }
 }
